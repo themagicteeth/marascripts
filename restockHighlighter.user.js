@@ -23,14 +23,17 @@ let items = []
  * 
  * */
 
+// Clothing
 if (shopName === "Clothing Shop") {
   items = []
 }
 
+// Footwear
 if (shopName === "Footwear Shop") {
   items = []
 }
 
+// Candles
 if (shopName === "Candles Shop") {
   items = []
 }
