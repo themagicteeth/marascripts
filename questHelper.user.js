@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name        Test
+// @name        Quest Helper
 // @namespace   Marascripts
 // @match       https://www.marapets.com/carpenter.php
 // @match       https://www.marapets.com/shop.php
