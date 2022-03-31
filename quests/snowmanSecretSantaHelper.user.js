@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Snowman and Secret Santa Helper
-// @namespace   Marapets
+// @namespace   Marascripts
 // @match       https://www.marapets.com/item.php*
 // @match       https://www.marapets.com/market.php*
 // @match       https://www.marapets.com/secret.php

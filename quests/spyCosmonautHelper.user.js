@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Desert Spy and Cosmonaut Helper
-// @namespace   Marapets
+// @namespace   Marascripts
 // @match       https://www.marapets.com/spy.php
 // @match       https://www.marapets.com/shop.php*
 // @match       https://www.marapets.com/cosmonaut.php
