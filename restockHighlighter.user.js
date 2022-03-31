@@ -10,7 +10,6 @@
 // ==/UserScript==
 
 const shopName = document.querySelector(".middleit.bigger .petpadding a b").innerText
-const stock = Array.from(document.querySelectorAll(".fixborders.flex-table3.middleit.itempadding .itempadding a span.bigger"))
 let items = []
 
 /* *
@@ -130,6 +129,7 @@ if (shopName === "Chocolate Shop") {
  * If a wanted item is found, it will add a red background to each item in your list. 
  * */
 if (items.length > 0) {
+  const stock = Array.from(document.querySelectorAll(".fixborders.flex-table3.middleit.itempadding .itempadding a span.bigger"))
   let buy = stock.filter(x => items.includes(x.innerHTML.split(" <")[0]));
   for (let i = 0; i < buy.length; i++) {
     const item = buy[i].parentElement.parentElement.parentElement.parentElement
