@@ -5,6 +5,7 @@
 // @grant       none
 // @version     1.0
 // @author      -
+// @license     MIT
 // @description Cheat at Memory, click the button and switch switch tabs to toggle
 // ==/UserScript==
 

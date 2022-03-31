@@ -12,6 +12,7 @@
 // @version     1.0
 // @author      themagicteeth
 // @description Quest automater for quests.
+// @license     MIT
 // @grant       GM_setValue
 // @grant       GM_getValue
 // @run-at      document-idle

@@ -13,6 +13,7 @@
 // @version     1.0
 // @author      themagicteeth
 // @description Automatically selects the user on the item page while questing.
+// @license     MIT
 // @run-at document-idle
 // ==/UserScript==
 
