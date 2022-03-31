@@ -17,6 +17,7 @@ Simply add the item name into the array, and it will then add a red background t
 
 ## Shop Pricer - [Download](https://github.com/themagicteeth/marascripts/raw/main/shop/shopPricer.user.js)
 **REQUIRES THE GIFTBOX**
+
 Click the shopkeeper image to autoprice all pages in your shop.
  * If the item has a red border (large price decrease) it will not reprice.
  
