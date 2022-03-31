@@ -6,6 +6,7 @@
 // @grant       GM_getValue
 // @version     1.0.1
 // @author      themagicteeth
+// @license     MIT
 // @description Automates repricing shop, requires the Gift Box
 // ==/UserScript==
 
@@ -26,6 +27,15 @@ if (autoPricerOn === 1) {
 
     // Click the "Update Prices" button, if the auto pricer message is there
     if (autoPriced !== -1) {
+        const largeDrop = document.querySelectorAll(".marapets_border15")
+        // const mediumDrop = document.querySelectorAll(".marapets_border14")
+        if (largeDrop.length !== 0) {
+            largeDrop.forEach((item) => {
+                const oldPrice = item.querySelector(".mp").innerText.split("MP")[0].replace(/,/g, "")
+                item.querySelector("input").value = oldPrice
+            })
+        }
+
         document.querySelector("input[value='Update Prices']").click()
     }
 
