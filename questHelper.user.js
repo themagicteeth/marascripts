@@ -28,6 +28,7 @@
  *    - Both should be fixed by adding a obtained field to the item
  * * Fix random hand in some shops
  * * Fix captcha detection
+ * * Set amount of time in order to clear quest when done questing
  ****************************************************************/
 
 
