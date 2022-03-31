@@ -4,9 +4,7 @@
 // @match       https://www.marapets.com/spy.php
 // @match       https://www.marapets.com/shop.php*
 // @match       https://www.marapets.com/cosmonaut.php
-// @grant       GM_setValue
-// @grant       GM_getValue
-// @grant       GM_openInTab
+// @grant       none
 // @version     1.0
 // @author      themagicteeth
 // @description Automatically selects the user on the item page while questing.

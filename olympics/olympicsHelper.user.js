@@ -4,7 +4,7 @@
 // @match       https://www.marapets.com/competitions.php
 // @grant       none
 // @version     1.0
-// @author      -
+// @author      themagicteeth
 // @license     MIT
 // @description Picks the ideal event for each pet.
 // ==/UserScript==

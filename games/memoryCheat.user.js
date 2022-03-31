@@ -4,7 +4,7 @@
 // @match       https://www.marapets.com/memory/game.php
 // @grant       none
 // @version     1.0
-// @author      -
+// @author      themagicteeth
 // @license     MIT
 // @description Cheat at Memory, click the button and switch switch tabs to toggle
 // ==/UserScript==

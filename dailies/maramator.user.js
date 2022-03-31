@@ -44,7 +44,6 @@
 // @match       https://www.marapets.com/bingo.php
 // @match       https://www.marapets.com/vending.php
 // @match       https://www.marapets.com/fishing.php
-// @grant       GM_openInTab
 // @grant       GM_setValue
 // @grant       GM_getValue
 // @version     1.40
