@@ -14,9 +14,10 @@
  * */
 const MY_PIN = "0000"
 
-
+// Deposit and Withdraw input boxes
 const DEPOSIT = document.querySelector("form[action='https://www.marapets.com/atm.php?do=deposit'] input[name='pin']")
 const WITHDRAW = document.querySelector("form[action='https://www.marapets.com/atm.php?do=withdraw'] input[name='pin']")
 
+// Set the value to your PIN
 DEPOSIT.value = MY_PIN
 WITHDRAW.value = MY_PIN
