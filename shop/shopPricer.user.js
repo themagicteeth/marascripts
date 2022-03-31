@@ -11,7 +11,7 @@
 // ==/UserScript==
 
 // Set onclick to shopkeeper image to start the autpricer
-let autoPricerOn = GM_getValue('autoprice', 0) // Defaults to 0
+const autoPricerOn = GM_getValue('autoprice', 0) // Defaults to 0
 document.querySelector(".mainfeature_art").onclick = GM_setValue('autoprice', 1) // Set to 1 when we click the shopkeeper
 
 // If the autoprice value is set to 1 (after clicking shopkeeper)

@@ -14,7 +14,7 @@ let active = 1
 const btn = document.createElement("button")
 btn.setAttribute("id", "toggle-active")
 btn.innerHTML = "Toggle Active"
-btn.style.zIndex  = 99
+btn.style.zIndex = 99
 btn.style.position = 'absolute'
 btn.style.left = "2em"
 btn.style.bottom = "2em"

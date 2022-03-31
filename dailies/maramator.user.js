@@ -62,7 +62,7 @@ function chooseDefaultPet(gameUrl) {
 }
 
 // Simerian Statue
-if (document.URL.includes("statue")) { 
+if (document.URL.includes("statue")) {
   const defaultPet = document.querySelector(".defaultpet")
   if (defaultPet) {
     const defaultPetId = defaultPet.parentElement.href.split('pet=')[1]
@@ -85,94 +85,94 @@ if (document.URL.includes("sultan")) {
   if (button) {
     button.click()
   }
-} 
+}
 
 
 if (!document.querySelector("div.middleit.comebackbox")) {
   // Pixie Dice
-  if (document.URL.includes("pixie")) { chooseDefaultPet("https://www.marapets.com/pixie.php?do=throw&pet_id=") } 
-  
+  if (document.URL.includes("pixie")) { chooseDefaultPet("https://www.marapets.com/pixie.php?do=throw&pet_id=") }
+
   // Genie
-  if (document.URL.includes("genie")) { chooseDefaultPet("https://www.marapets.com/genie.php?do=wish&pet_id=") } 
-  
+  if (document.URL.includes("genie")) { chooseDefaultPet("https://www.marapets.com/genie.php?do=wish&pet_id=") }
+
   // Trash Heap
-  if (document.URL.includes("trash")) { clickButton('Grab Trash') } 
-  
+  if (document.URL.includes("trash")) { clickButton('Grab Trash') }
+
   // Telescope
-  if (document.URL.includes("telescope")) { clickButton('Use for 2,000MP') } 
-  
+  if (document.URL.includes("telescope")) { clickButton('Use for 2,000MP') }
+
   // Undying Fairy
-  if (document.URL.includes("undyingfairy")) { clickButton('Spin Wheel') } 
-  
+  if (document.URL.includes("undyingfairy")) { clickButton('Spin Wheel') }
+
   // Jelly Castle
   // if (document.URL.includes("jelly")) { clickButton('Pay 300MP') } 
-  
+
   // Sewage
-  if (document.URL.includes("sewage")) { clickButton('Swim in the Sewage') } 
-  
+  if (document.URL.includes("sewage")) { clickButton('Swim in the Sewage') }
+
   // Gumball Machine
-  if (document.URL.includes("gumball")) { clickButton('Put in 150MP') } 
-  
+  if (document.URL.includes("gumball")) { clickButton('Put in 150MP') }
+
   // Pot of Gold
-  if (document.URL.includes("potofgold")) { clickButton('Grab Prize') } 
-  
+  if (document.URL.includes("potofgold")) { clickButton('Grab Prize') }
+
   // Test Your Strength
-  if (document.URL.includes("giganticfairy")) { clickButton('Test Your Strength') } 
-  
+  if (document.URL.includes("giganticfairy")) { clickButton('Test Your Strength') }
+
   // Sugar Stack
-  if (document.URL.includes("sugarstack")) { clickButton('Play for 1,000MP') } 
-  
+  if (document.URL.includes("sugarstack")) { clickButton('Play for 1,000MP') }
+
   // Plushie Machine
-  if (document.URL.includes("plushies")) { clickButton('Move Down') } 
-  
+  if (document.URL.includes("plushies")) { clickButton('Move Down') }
+
   // Seven Heaven
-  if (document.URL.includes("sevenheaven")) { clickButton('Roll Again') } 
-  
+  if (document.URL.includes("sevenheaven")) { clickButton('Roll Again') }
+
   // Clothing Rack
-  if (document.URL.includes("rack")) { clickButton('Take Free Clothing') } 
-  
+  if (document.URL.includes("rack")) { clickButton('Take Free Clothing') }
+
   // Grave Robbing
-  if (document.URL.includes("graverobbing")) { clickButton('Rob a Grave') } 
-  
+  if (document.URL.includes("graverobbing")) { clickButton('Rob a Grave') }
+
   // Archeology
-  if (document.URL.includes("archeology")) { clickButton("Dig for Simerian Artifacts") } 
-  
+  if (document.URL.includes("archeology")) { clickButton("Dig for Simerian Artifacts") }
+
   // Ant Hill
-  if (document.URL.includes("ants.php")) { clickButton("Grab Prize") } 
-  
+  if (document.URL.includes("ants.php")) { clickButton("Grab Prize") }
+
   // Scratchcards
-  if (document.URL.includes("scratchcards2.php")) { clickButton("Buy Scratchcard")} 
-  
+  if (document.URL.includes("scratchcards2.php")) { clickButton("Buy Scratchcard") }
+
   // Vending Machine
-  if (document.URL.includes("vending.php")) { clickButton("Use Vending Machine")} 
-  
+  if (document.URL.includes("vending.php")) { clickButton("Use Vending Machine") }
+
   // Fishing
-  if (document.URL.includes("fishing.php")) { clickButton("Go Fishing")} 
-  
+  if (document.URL.includes("fishing.php")) { clickButton("Go Fishing") }
+
   // Mummy Multiplier
   if (document.URL.includes("multiplier")) { pickRandom(".middleit.flex-table #eachitemdiv a") }
-  
+
   // Jackpot Pyramid
-  if (document.URL.includes("jackpot")) { pickRandom(".pyramid a") } 
-  
+  if (document.URL.includes("jackpot")) { pickRandom(".pyramid a") }
+
   // Worm Digging
-  if (document.URL.includes("wormdigging")) { pickRandom(".wormbox.flex-middle.flex-grow input") } 
-  
+  if (document.URL.includes("wormdigging")) { pickRandom(".wormbox.flex-middle.flex-grow input") }
+
   // Nutty Tree
-  if (document.URL.includes("nuttytree")) { pickRandom(".middleit.flex-table .flex-buttons form input[type='submit']") } 
-  
+  if (document.URL.includes("nuttytree")) { pickRandom(".middleit.flex-table .flex-buttons form input[type='submit']") }
+
   // Spooks
-  if (document.URL.includes("spooks")) { pickRandom(".middleit.flex-table #eachitemdiv.itemwidth.fixborders a") } 
-  
+  if (document.URL.includes("spooks")) { pickRandom(".middleit.flex-table #eachitemdiv.itemwidth.fixborders a") }
+
   // Balloon Burst
-  if (document.URL.includes("burst")) { pickRandom(".middleit.flex-table #eachitemdiv.itemwidth.fixborders a") } 
-  
+  if (document.URL.includes("burst")) { pickRandom(".middleit.flex-table #eachitemdiv.itemwidth.fixborders a") }
+
   // Giveaways
-  if (document.URL.includes("giveaways")) { pickRandom("#eachitemdiv a") } 
-  
+  if (document.URL.includes("giveaways")) { pickRandom("#eachitemdiv a") }
+
   // Open Graves
-  if (document.URL.includes("graves")) { pickRandom(".maralayoutmiddle .flex-table .middleit a") } 
-  
+  if (document.URL.includes("graves")) { pickRandom(".maralayoutmiddle .flex-table .middleit a") }
+
   // Christmas Tree
   if (document.URL.includes("tree")) { clickButton("Shake Tree") } // Shake for the Avatar
 }
@@ -181,7 +181,7 @@ function pickRandom(selector) {
   const elements = document.querySelectorAll(selector)
   elements[Math.floor(Math.random() * elements.length)].click()
 }
- 
+
 if (document.URL.includes("dash")) {
   clickButton('Play for 3,000MP')
   pickRandom('.middleit.flex-table #eachitemdiv.itemwidth.fixborders a')
@@ -190,12 +190,12 @@ if (document.URL.includes("dash")) {
 
 
 if (document.URL.includes("pie")) {
-    // Button to start the game
-    clickButton('Play for 500MP')
+  // Button to start the game
+  clickButton('Play for 500MP')
 
-    // The buttons are on the top and bottom of the page, so we just want the first set
-    const throwPieButtons = Array.from(document.querySelectorAll('.maralayoutmiddle .middleit.flex-table .flex-buttons form input')).slice(0, 6)
-    if (throwPieButtons.length > 0) { throwPieButtons[Math.floor(Math.random() * throwPieButtons.length)].click() }
+  // The buttons are on the top and bottom of the page, so we just want the first set
+  const throwPieButtons = Array.from(document.querySelectorAll('.maralayoutmiddle .middleit.flex-table .flex-buttons form input')).slice(0, 6)
+  if (throwPieButtons.length > 0) { throwPieButtons[Math.floor(Math.random() * throwPieButtons.length)].click() }
 }
 
 
@@ -209,8 +209,8 @@ if (document.URL.includes("tombola")) {
   // If we can take a ticket, take one
   // We delay a couple seconds, otherwise it does not work
   if (takeTicket) {
-    setTimeout(function(){
-       takeTicket.click()
+    setTimeout(function () {
+      takeTicket.click()
     }, 2000);
   }
 }
@@ -222,8 +222,8 @@ if (document.URL.includes("doubleornothing")) {
   // Only if we have coins to click
   if (coins.length !== 0) {
     // Click a random coin, every two seconds (it bugs out otherwise)
-    setTimeout(function(){
-       coins[Math.floor(Math.random() * coins.length)].click()
+    setTimeout(function () {
+      coins[Math.floor(Math.random() * coins.length)].click()
     }, 1200);
   }
 }
@@ -231,8 +231,8 @@ if (document.URL.includes("doubleornothing")) {
 if (document.URL.includes("lottery.php")) {
   const tickets = parseInt(document.querySelector(".bigger.middleit.alsotry b").innerText)
   if (tickets < 250) {
-    setTimeout(function(){
-       document.querySelector("input[value='Buy 50 Lucky Dips']").click()
+    setTimeout(function () {
+      document.querySelector("input[value='Buy 50 Lucky Dips']").click()
     }, 200);
   }
 }
@@ -240,8 +240,8 @@ if (document.URL.includes("lottery.php")) {
 if (document.URL.includes("raffle.php")) {
   const tickets = parseInt(document.querySelectorAll(".bigger.middleit b")[1].innerText)
   if (tickets < 100) {
-    setTimeout(function(){
-       document.querySelector("input[value='Buy 10 Raffle Tickets']").click()
+    setTimeout(function () {
+      document.querySelector("input[value='Buy 10 Raffle Tickets']").click()
     }, 200);
   }
 }
@@ -250,11 +250,11 @@ if (document.URL.includes("raffle.php")) {
 
 // Guess the Weight
 if (document.URL.includes("guesstheweight")) {
-    const weightInput = document.querySelector("input[name='weight'") // The weight input box
-    if (weightInput) {
-        weightInput.value = Math.floor(Math.random() * 100) // Random between 1 and 100
-        document.querySelector("input[value='Guess the Weight']").click()
-    }
+  const weightInput = document.querySelector("input[name='weight'") // The weight input box
+  if (weightInput) {
+    weightInput.value = Math.floor(Math.random() * 100) // Random between 1 and 100
+    document.querySelector("input[value='Guess the Weight']").click()
+  }
 }
 
 
@@ -267,7 +267,7 @@ if (document.URL.includes("pancakes")) {
     // If we can play click the button
     if (startGame) {
       startGame.click()
-    } 
+    }
 
     // If we don't have the button, play
     else {
@@ -280,19 +280,19 @@ if (document.URL.includes("pancakes")) {
       }
 
       if (pancakes.length < 6) {
-          const clickedPancake = GM_getValue("clickedPancake")
-          let options = []
+        const clickedPancake = GM_getValue("clickedPancake")
+        let options = []
 
-          if (clickedPancake === "0") { options = [pancakes[0], pancakes[2], pancakes[4], pancakes[5]] }
-          else if (clickedPancake === "1") { options = [pancakes[0], pancakes[3], pancakes[4], pancakes[5]] }
-          else if (clickedPancake === "2") { options = [pancakes[0], pancakes[3], pancakes[4]] }
-          else if (clickedPancake === "3") { options = [pancakes[1], pancakes[2], pancakes[5]] }
-          else if (clickedPancake === "4") { options = [pancakes[0], pancakes[2], pancakes[5]] }
-          else { options = [pancakes[0], pancakes[1], pancakes[3], pancakes[4]] }
+        if (clickedPancake === "0") { options = [pancakes[0], pancakes[2], pancakes[4], pancakes[5]] }
+        else if (clickedPancake === "1") { options = [pancakes[0], pancakes[3], pancakes[4], pancakes[5]] }
+        else if (clickedPancake === "2") { options = [pancakes[0], pancakes[3], pancakes[4]] }
+        else if (clickedPancake === "3") { options = [pancakes[1], pancakes[2], pancakes[5]] }
+        else if (clickedPancake === "4") { options = [pancakes[0], pancakes[2], pancakes[5]] }
+        else { options = [pancakes[0], pancakes[1], pancakes[3], pancakes[4]] }
 
-          GM_setValue("clickedPancake", null)
+        GM_setValue("clickedPancake", null)
 
-          options[Math.floor(Math.random() * options.length)].click()
+        options[Math.floor(Math.random() * options.length)].click()
       }
     }
   }
@@ -304,12 +304,12 @@ if (document.URL.includes("cloudnine")) {
   if (!document.querySelector("div.middleit.comebackbox")) {
     const whiteClouds = document.querySelectorAll("img[src='https://images.marapets.com/clouds/cloud.png'")
     const stormClouds = document.querySelectorAll("img[src='https://images.marapets.com/clouds/storm.png']")
-    
+
     // We can only click 3 clouds, so click random ones until 6 are left
     if (whiteClouds.length > 6) {
       whiteClouds[Math.floor(Math.random() * whiteClouds.length)].click()
     }
-    
+
     // Click a random storm cloud when they show up
     if (stormClouds.length !== 0) {
       stormClouds[Math.floor(Math.random() * stormClouds.length)].click()
@@ -321,13 +321,13 @@ if (document.URL.includes("trojan.php")) {
   if (!document.querySelector("div.middleit.comebackbox")) {
     const input = document.querySelector("input[name='country']")
     let country = document.querySelector("form .middleit img").getAttribute("src").split("_")[1].split(".")[0]
-    
+
     // Check for countries which don't match the image name
     if (country === "Bosnia") { country = "Bosnia and Herzegovina" }
     if (country === "Trinidad") { country = "Trinidad and Tobago" }
     if (country === "UK") { country = "United Kingdom" }
     if (country === "UAE") { country = "United Arab Emirates" }
-    
+
     input.value = country
     clickButton("Guess the Flag")
   }

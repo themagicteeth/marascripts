@@ -60,17 +60,17 @@ if (shopName === "Meat Shop") {
 if (shopName === "Vegetables Shop") {
   items = []
 }
-  
+
 // Flowers
 if (shopName === "Flowers Shop") {
   items = []
 }
-    
+
 // Fruit
 if (shopName === "Fruits Shop") {
   items = []
 }
-      
+
 // Coffee
 if (shopName === "Coffee Shop") {
   items = []
@@ -130,9 +130,9 @@ if (shopName === "Chocolate Shop") {
  * */
 if (items.length > 0) {
   const stock = Array.from(document.querySelectorAll(".fixborders.flex-table3.middleit.itempadding .itempadding a span.bigger"))
-  let buy = stock.filter(x => items.includes(x.innerHTML.split(" <")[0]));
-  for (let i = 0; i < buy.length; i++) {
-    const item = buy[i].parentElement.parentElement.parentElement.parentElement
+  const buy = stock.filter(x => items.includes(x.innerHTML.split(" <")[0]));
+  for (const element of buy) {
+    const item = element.parentElement.parentElement.parentElement.parentElement
     item.style.background = "#f5c6ca"
     item.style.borderRadius = "8px"
   }

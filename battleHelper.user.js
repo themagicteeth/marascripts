@@ -67,14 +67,14 @@ function battleAgain() {
 
 // If there is no captcha, proceed
 if (!document.querySelector(".middleit .more.italic") && document.querySelector(".opponents")) {
-    setTimeout(function () {
+    setTimeout(() => {
         getOpponentsTurn()
         battleAgain()
     }, 600)
 }
 
 if (document.URL.includes("talon.php")) {
-    setTimeout(function () {
+    setTimeout(() => {
         const startBattle = document.querySelector("button.g-recaptcha")
         if (startBattle) { startBattle.click() }
 
@@ -84,7 +84,7 @@ if (document.URL.includes("talon.php")) {
 }
 
 if (document.URL.includes("sumo.php")) {
-    setTimeout(function () {
+    setTimeout(() => {
         const startBattle = document.querySelector("button.g-recaptcha")
         if (startBattle) { startBattle.click() }
 
@@ -94,7 +94,7 @@ if (document.URL.includes("sumo.php")) {
 }
 
 if (document.URL.includes("knight.php")) {
-    setTimeout(function () {
+    setTimeout(() => {
         const startBattle = document.querySelector("button.g-recaptcha")
         if (startBattle) { startBattle.click() }
 

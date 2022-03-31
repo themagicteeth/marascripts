@@ -117,7 +117,7 @@ function getItems() {
                 index += 1
             }
         })
-      
+
         GM_setValue("items", itemsNeeded)
         return itemsNeeded
     }
@@ -125,7 +125,7 @@ function getItems() {
 
 async function checkFirstItem() {
     const questItems = getItems()
-    
+
     // Check if we still need items
     if (questItems[0]) {
         // Click "Check Price" on the item based on its "data-id" field
@@ -177,7 +177,7 @@ function getLocation() {
                 questAgain.click()
             }
         }
-      
+
         // If Queen Bee stings a pet
         //const queenBeeSting = document.querySelector(".maralayoutmiddle a .bigger.petpadding")
         // else if (queenBeeSting) {
@@ -185,7 +185,7 @@ function getLocation() {
         //     document.querySelector("input[value='Quest Queen Bee Again']").click()
         //   }
         // }
-      
+
         // If we don't need to start a new one, check the items
         else { checkFirstItem() }
     }
@@ -204,7 +204,7 @@ function getLocation() {
         const thanksForBuying = document.querySelector(".bigger.middleit.btmpad6")
         if (thanksForBuying) { window.location = questURL }
     }
-    
+
     // We are buying an item from an NPC shop
     if (document.URL.includes("/shop.php?do=buy&id=")) {
         const buyButton = document.querySelector("button")

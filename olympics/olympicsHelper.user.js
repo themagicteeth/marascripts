@@ -17,19 +17,19 @@
  *  - Add "Olympian" condition
  * */
 
-setTimeout(function(){
+setTimeout(() => {
   const events = document.querySelectorAll(".eachpet_box.marapets_border")
 
   if (events.length > 0) {
-    let ultimate = []
-    let expert = []
-    let intermediate = []
-    let beginner = []
-    let untrained = []
+    const ultimate = []
+    const expert = []
+    const intermediate = []
+    const beginner = []
+    const untrained = []
 
-    for (let event = 0; event < events.length; event++) {
-      const level = events[event].querySelector(".alsotry").innerText
-      const enterUrl = events[event].querySelector("a").href
+    for (const eventElement of events) {
+      const level = eventElement.querySelector(".alsotry").innerText
+      const enterUrl = eventElement.querySelector("a").href
 
       if (level === "Ultimate") { ultimate.push(enterUrl) }
       else if (level === "Expert") { expert.push(enterUrl) }
@@ -45,9 +45,7 @@ setTimeout(function(){
     else { window.location.href = untrained[0] }
   }
 
-  else {
-    if (!document.querySelector("div.middleit.comebackbox")) {
-      window.location.href = "https://www.marapets.com/competitions.php" 
-    }
+  else if (!document.querySelector("div.middleit.comebackbox")) {
+    window.location.href = "https://www.marapets.com/competitions.php" 
   }
 }, 1200);

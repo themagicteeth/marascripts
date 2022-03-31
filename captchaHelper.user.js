@@ -58,7 +58,7 @@ const captcha = document.querySelector("input[name='code']")
 // If we have a captcha, focus it, and once six numbers are entered, submit.
 if (captcha) {
   captcha.focus() // Focus captcha input
-  captcha.oninput = function () {
+  captcha.oninput = () => {
     // Once six numbers are inpt
     if (captcha.value.length === 6) {
       const submit = document.querySelector("input[type='submit']")

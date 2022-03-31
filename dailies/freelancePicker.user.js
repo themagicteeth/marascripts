@@ -20,9 +20,9 @@ if (!document.querySelector(".bigger.middleit.comebackbox")) {
     // Loop through all the jobs, and if it is not in the array
     // of unqualified jobs, compare the ratio to the current best
     // if it is better, set the ID as the bestJob variable
-    for (let i = 0; i < allJobs.length; i++) {
-        if (!unqualified.includes(allJobs[i])) {
-            const job = allJobs[i].innerText.split(" ") // Text of the job
+    for (const allJob of allJobs) {
+        if (!unqualified.includes(allJob)) {
+            const job = allJob.innerText.split(" ") // Text of the job // Text of the job
             const time = getJobTime(job)
             const ratio = getJobRatio(job, time)
 
@@ -30,7 +30,7 @@ if (!document.querySelector(".bigger.middleit.comebackbox")) {
             // If it is we update both variables (bestRatio and bestJob)
             if (ratio > bestRatio) {
                 bestRatio = ratio
-                bestJob = allJobs[i].id
+                bestJob = allJob.id
             }
         }
     }
