@@ -19,6 +19,19 @@
 
 
 /****************************************************************
+ * TODO:
+ * * Dont use red checks to determine if we have the item
+ *    - Use messages on the page after buying it
+ *    - Add a obtained field to items object
+ * * Duplicate item bug
+ * * Don't base item to buy in shop on border
+ *    - Both should be fixed by adding a obtained field to the item
+ * * Fix random hand in some shops
+ * * Fix captcha detection
+ ****************************************************************/
+
+
+/****************************************************************
  * 
  * HELPER FUNCTIONS
  * 
@@ -182,6 +195,7 @@ function getLocation() {
     // We are in an NPC shop
     if (document.URL.includes("/shop.php")) {
         // Find the item (dotted blue border), and click it
+        // TODO: Fix the random times it doesn't buy the item
         const itemToBuy = document.querySelector("div.marapets_border5 a") // Item with a dotted blue border
         if (itemToBuy) { itemToBuy.click() }
 
