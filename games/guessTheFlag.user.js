@@ -15,7 +15,7 @@ function clickButton(buttonValue) {
     }
 }
 
-if (document.querySelector("div.middleit.comebackbox")) {
+if (!document.querySelector("div.middleit.comebackbox")) {
     const input = document.querySelector("input[name='country']")
     let country = document.querySelector("form .middleit img")
         .getAttribute("src")
