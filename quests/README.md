@@ -2,6 +2,8 @@
 
 **DO NOT ENABLE THESE UNLESS YOU ARE QUESTING**
 
+**CONFLICTS WITH SHOP PRICER EASYMODE**
+
 ## Quest Helper - [Download](https://github.com/themagicteeth/marascripts/raw/main/quests/questHelper.user.js)
 Automates questing.
 
