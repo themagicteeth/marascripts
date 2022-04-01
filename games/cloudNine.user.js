@@ -6,6 +6,7 @@
 // @author      themagicteeth
 // @description Plays Cloud Nine.
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 function clickRandom(clouds) {

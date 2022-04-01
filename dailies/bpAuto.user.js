@@ -8,6 +8,7 @@
 // @author      themagicteeth
 // @description Automates BP dailies
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 if (!document.querySelector("div.middleit.comebackbox")) {

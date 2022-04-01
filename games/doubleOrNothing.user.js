@@ -6,6 +6,7 @@
 // @author      themagicteeth
 // @description Plays Double or Nothing.
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 const coins = document.querySelectorAll("input[name='submit']")

@@ -6,6 +6,7 @@
 // @author      themagicteeth
 // @description Guesses the flag for you.
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 function clickButton(buttonValue) {

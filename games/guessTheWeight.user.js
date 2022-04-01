@@ -6,6 +6,7 @@
 // @author      themagicteeth
 // @description Guesses random weight of the potato.
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 const weightInput = document.querySelector("input[name='weight'")

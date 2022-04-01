@@ -6,6 +6,7 @@
 // @author      themagicteeth
 // @description Automates Tombola
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 const takeTicket = document.getElementById("playTombola")

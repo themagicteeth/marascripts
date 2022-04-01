@@ -6,6 +6,7 @@
 // @author      themagicteeth
 // @description This throws pies.
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 function clickButton(buttonValue) {

@@ -17,6 +17,7 @@
 // @author      themagicteeth
 // @description Automates picking your default pet for dailies.
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 const defaultPetImg = document.querySelector(".defaultpet")

@@ -6,6 +6,7 @@
 // @author      themagicteeth
 // @description Plays Pipe Dream optimally.
 // @license     MIT
+// @grant       none
 // ==/UserScript==
 
 if (!document.querySelector(".middleit.comebackbox")) {
