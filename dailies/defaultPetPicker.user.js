@@ -2,7 +2,7 @@
 // @name        Default Pet Picker
 // @namespace   Marascripts
 // @match       https://www.marapets.com/guillotine.php
-// @match       https://www.marapets.com/pond.php
+// @match       https://www.marapets.com/pond.php?i_id=*
 // @match       https://www.marapets.com/sewerpipes.php
 // @match       https://www.marapets.com/icecaves.php
 // @match       https://www.marapets.com/reservoir.php
