@@ -24,3 +24,6 @@ Picks your "default pet" automatically on things which require it.
 
 ## Stock Helper - [Download](https://github.com/themagicteeth/marascripts/raw/main/dailies/stockHelper.user.js)
 Selects and purchases the cheapest stock available.
+
+## Interest Collector - [Download](https://github.com/themagicteeth/marascripts/raw/main/dailies/interest.user.js)
+Automatically collects interest from all the banks, if available.
