@@ -3,7 +3,6 @@
 // @namespace   Marascripts
 // @match       https://www.marapets.com/giganticfairy.php
 // @match       https://www.marapets.com/potofgold.php
-// @match       https://www.marapets.com/nuttytree.php
 // @match       https://www.marapets.com/sewage.php
 // @match       https://www.marapets.com/graves.php
 // @match       https://www.marapets.com/sevenheaven.php
