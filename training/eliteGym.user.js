@@ -20,7 +20,7 @@ function setUrl() {
     GM_setValue("training", `https://www.marapets.com/elitegym.php?do=dogym&${pet}`)
 }
 
-if (!document.URL.includes("/gym.php") && !document.URL.includes("/school.php") {
+if (!document.URL.includes("/gym.php") && !document.URL.includes("/school.php")) {
   // We are in a user shop, and bought a crystal
   // Save that we bought it and then go back to the Elite Gym
   if (document.URL.includes("/shops.php")) {
