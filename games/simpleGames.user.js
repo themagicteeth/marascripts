@@ -36,6 +36,7 @@
 // @match       https://www.marapets.com/bpbank.php
 // @match       https://www.marapets.com/rpbank.php
 // @match       https://www.marapets.com/bank.php
+// @match       https://www.marapets.com/dash.php
 // @version     1.0.0
 // @author      themagicteeth
 // @description Automates simple games with just one button to click.
@@ -56,36 +57,55 @@ function pickRandom(selector) {
 }
 
 if (!document.querySelector("div.middleit.comebackbox")) {
-  if (document.URL.includes("multiplier")) { pickRandom(".middleit.flex-table #eachitemdiv a") }
-  if (document.URL.includes("jackpot")) { pickRandom(".pyramid a") }
-  if (document.URL.includes("wormdigging")) { pickRandom(".wormbox.flex-middle.flex-grow input") }
-  if (document.URL.includes("nuttytree")) { pickRandom(".middleit.flex-table .flex-buttons form input[type='submit']") }
-  if (document.URL.includes("spooks")) { pickRandom(".middleit.flex-table #eachitemdiv.itemwidth.fixborders a") }
-  if (document.URL.includes("burst")) { pickRandom(".middleit.flex-table #eachitemdiv.itemwidth.fixborders a") }
-  if (document.URL.includes("giveaways")) { pickRandom("#eachitemdiv a") }
-  if (document.URL.includes("graves")) { pickRandom(".maralayoutmiddle .flex-table .middleit a") }
-
-  if (document.URL.includes("sugarstack")) { clickButton('Play for 1,000MP') }
-  if (document.URL.includes("telescope")) { clickButton('Use for 2,000MP') }
-  if (document.URL.includes("gumball")) { clickButton('Put in 150MP') }
-  if (document.URL.includes("trash")) { clickButton('Grab Trash') }
-  if (document.URL.includes("undyingfairy")) { clickButton('Spin Wheel') }
-  if (document.URL.includes("sewage")) { clickButton('Swim in the Sewage') }
-  if (document.URL.includes("potofgold")) { clickButton('Grab Prize') }
-  if (document.URL.includes("giganticfairy")) { clickButton('Test Your Strength') }
-  if (document.URL.includes("plushies")) { clickButton('Move Down') }
-  if (document.URL.includes("sevenheaven")) { clickButton('Roll Again') }
-  if (document.URL.includes("rack")) { clickButton('Take Free Clothing') }
-  if (document.URL.includes("graverobbing")) { clickButton('Rob a Grave') }
+  /**
+   * FREE GAMES
+   */
+  if (document.URL.includes("multiplier")) { pickRandom(".middleit.flex-table #eachitemdiv a") }  // Mummy Multiplier
+  if (document.URL.includes("jackpot")) { pickRandom(".pyramid a") }  // Jackpot Pyramid
+  if (document.URL.includes("wormdigging")) { pickRandom(".wormbox.flex-middle.flex-grow input") }  // Worm Digging
+  if (document.URL.includes("nuttytree")) { pickRandom(".middleit.flex-table .flex-buttons form input[type='submit']") }  // Nutty Tree
+  if (document.URL.includes("spooks")) { pickRandom(".middleit.flex-table #eachitemdiv.itemwidth.fixborders a") }  // Spooks Busters
+  if (document.URL.includes("burst")) { pickRandom(".middleit.flex-table #eachitemdiv.itemwidth.fixborders a") }  // Balloon Burst
+  if (document.URL.includes("giveaways")) { pickRandom("#eachitemdiv a") }  // Giveaways
+  if (document.URL.includes("graves")) { pickRandom(".maralayoutmiddle .flex-table .middleit a") }  // Open Graves
+  if (document.URL.includes("sewage")) { clickButton('Swim in the Sewage') }  // Sewage
+  if (document.URL.includes("giganticfairy")) { clickButton('Test Your Strength') }  // Test Your Strength
+  if (document.URL.includes("sevenheaven")) { clickButton('Roll Again') }  // Seven Heaven
+  if (document.URL.includes("undyingfairy")) { clickButton('Spin Wheel') }  // Undying Fairy
+  if (document.URL.includes("trash")) { clickButton('Grab Trash') }  // Trash Heap
+  if (document.URL.includes("ants.php")) { clickButton("Grab Prize") }  // Ant Hill
+  if (document.URL.includes("vending.php")) { clickButton("Use Vending Machine") }  // Vending Macine
+  if (document.URL.includes("rack")) { clickButton('Take Free Clothing') }  // Clothing Rack
+  if (document.URL.includes("graverobbing")) { clickButton('Rob a Grave') }  // Grave Robbing
   if (document.URL.includes("archeology")) { clickButton("Dig for Simerian Artifacts") }
-  if (document.URL.includes("ants.php")) { clickButton("Grab Prize") }
-  if (document.URL.includes("vending.php")) { clickButton("Use Vending Machine") }
-  if (document.URL.includes("fishing.php")) { clickButton("Go Fishing") }
-  if (document.URL.includes("/tree.php")) { clickButton("Shake Tree") } // Shake for the Avatar
-  if (document.URL.includes("scratchcards2.php")) { clickButton("Buy Scratchcard") }
-  if (document.URL.includes("sultan")) { clickButton("Tax") }
-  if (document.URL.includes("bank.php")) { clickButton("Interest") }
-  if (document.URL.includes("/sword.php")) { clickButton("Lift Sword from the Stone") }
-  if (document.URL.includes("/magazines.php")) { clickButton("Buy Magazine") }
-  if (document.URL.includes("/newsagent.php")) { clickButton("Buy Newspaper") }
+  if (document.URL.includes("potofgold")) { clickButton('Grab Prize') }  // Pot of Gold
+  if (document.URL.includes("/plushies2.php")) { clickButton('Move Down') }  // Enchanted Plushie Machine
+  if (document.URL.includes("fishing.php")) { clickButton("Go Fishing") }  // Fishing
+  if (document.URL.includes("/tree.php")) { clickButton("Shake Tree") } // Christmas Tree, shake for the avatar
+  if (document.URL.includes("bank.php")) { clickButton("Interest") }  // RP, BP, MP bank interest
+
+
+  /**
+   * POINTS TO PLAY (MP)
+   */
+  if (document.URL.includes("sugarstack")) { clickButton('Play for 1,000MP') }  // Sugar Stack
+  if (document.URL.includes("telescope")) { clickButton('Use for 2,000MP') }  // Telescope
+  if (document.URL.includes("gumball")) { clickButton('Put in 150MP') }  // Gumball Machine
+  if (document.URL.includes("/plushies.php")) { clickButton('Move Down') }  // Plushie Machine
+  if (document.URL.includes("scratchcards2.php")) { clickButton("Buy Scratchcard") }  // Scratchcards
+  if (document.URL.includes("sultan")) { clickButton("Tax") } // Sultan Loyalty
+
+  // Dukka Dash
+  if (document.URL.includes("/dash.php")) {
+    clickButton('Play for 3,000MP')
+    pickRandom('.middleit.flex-table #eachitemdiv.itemwidth.fixborders a')
+  }
+
+
+  /**
+   * POINTS TO PLAY (BP)
+   */
+  if (document.URL.includes("/magazines.php")) { clickButton("Buy Magazine") }  //Magazines
+  if (document.URL.includes("/newsagent.php")) { clickButton("Buy Newspaper") } // Newspapers
+  if (document.URL.includes("/sword.php")) { clickButton("Lift Sword from the Stone") }  // Sword in the Stone
 }
