@@ -37,6 +37,9 @@
 // @match       https://www.marapets.com/rpbank.php
 // @match       https://www.marapets.com/bank.php
 // @match       https://www.marapets.com/dash.php
+// @match       https://www.marapets.com/tombola*
+// @match       https://www.marapets.com/trojan.php
+// @match       https://www.marapets.com/pipes.php
 // @version     1.0.0
 // @author      themagicteeth
 // @description Automates simple games with just one button to click.
@@ -84,6 +87,34 @@ if (!document.querySelector("div.middleit.comebackbox")) {
   if (document.URL.includes("/tree.php")) { clickButton("Shake Tree") } // Christmas Tree, shake for the avatar
   if (document.URL.includes("bank.php")) { clickButton("Interest") }  // RP, BP, MP bank interest
 
+  // All Tombola
+  if (document.URL.includes("tombola")) {
+    const takeTicket = document.getElementById("playTombola")
+    if (takeTicket) {
+      setTimeout(() => {
+        takeTicket.click()
+      }, 2000);
+    }
+  }
+
+  // Guess the Flag
+  if (document.URL.includes("trojan")) {
+    const input = document.querySelector("input[name='country']")
+    let country = document.querySelector("form .middleit img")
+      .getAttribute("src")
+      .split("_")[1]
+      .split(".")[0]
+
+    // Check for countries which don't match the image name
+    if (country === "Bosnia") { country = "Bosnia and Herzegovina" }
+    if (country === "Trinidad") { country = "Trinidad and Tobago" }
+    if (country === "UK") { country = "United Kingdom" }
+    if (country === "UAE") { country = "United Arab Emirates" }
+
+    input.value = country
+    clickButton("Guess the Flag")
+  }
+
 
   /**
    * POINTS TO PLAY (MP)
@@ -108,4 +139,32 @@ if (!document.querySelector("div.middleit.comebackbox")) {
   if (document.URL.includes("/magazines.php")) { clickButton("Buy Magazine") }  //Magazines
   if (document.URL.includes("/newsagent.php")) { clickButton("Buy Newspaper") } // Newspapers
   if (document.URL.includes("/sword.php")) { clickButton("Lift Sword from the Stone") }  // Sword in the Stone
+
+
+  /**
+   * POINTS TO PLAY (Fake Dukka)
+   */
+  // Pipe Dream
+  if (document.URL.includes("/pipes.php")) {
+    const playButton = document.querySelector("input[value='Play Pipe Dream']")
+    if (playButton) { playButton.click() }
+
+    const rollDice = document.querySelector("input[value='Roll Dice']")
+    if (rollDice) { rollDice.click() }
+
+    const canBlock = document.querySelector(".maralayoutmiddle .middleit .bigger.middleit").innerText.match(/\d/g)
+    if (canBlock.includes("9")) { clickPipe(9) } // 4 possible
+    else if (canBlock.includes("8")) { clickPipe(8) } // 5 possible
+    else if (canBlock.includes("7")) { clickPipe(7) } // 6 possible
+    else if (canBlock.includes("1")) { clickPipe(1) } // 14 possible
+    else if (canBlock.includes("2")) { clickPipe(2) } // 15 possible
+    else if (canBlock.includes("3")) { clickPipe(3) } // 16 possible
+    else if (canBlock.includes("4")) { clickPipe(4) } // 17 possible
+    else if (canBlock.includes("5")) { clickPipe(5) } // 18 possible
+    else { clickPipe(6) } // 19 possible
+  }
+
+  function clickPipe(number) {
+    document.querySelector(`a[href='pipes.php?pipe=${number}']`).click()
+  }
 }
