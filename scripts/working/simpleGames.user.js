@@ -16,7 +16,7 @@
 // @match       https://www.marapets.com/dash.php*
 // @match       https://www.marapets.com/sewage.php
 // @match       https://www.marapets.com/giganticfairy.php
-// @match       https://www.marapets.com/sevenheaven.php
+// @match       https://www.marapets.com/sevenheaven.php*
 // @match       https://www.marapets.com/undyingfairy.php
 // @match       https://www.marapets.com/trash.php
 // @match       https://www.marapets.com/ants.php
