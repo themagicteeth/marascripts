@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        Freelance Picker
-// @match       https://www.marapets.com/agency.php
-// @grant       none
-// @version     1.0.1
+// @description Picks the best job based on time and MP.
+// @version     1.1.0
 // @author      themagicteeth
-// @description Picks the best job based on time and MP
+// @grant       none
+// @match       https://www.marapets.com/agency.php*
 // ==/UserScript==
 
 // Check to make sure that we aren't on a job before continuing

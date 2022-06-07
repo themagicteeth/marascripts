@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name        Stock Helper
-// @match       https://www.marapets.com/shares.php
-// @grant       none
-// @version     1.0
-// @author      themagicteeth
 // @description Buys cheapest stock.
+// @version     1.1.0
+// @author      themagicteeth
+// @grant       none
+// @match       https://www.marapets.com/shares.php
 // ==/UserScript==
 
 const ON_COOLDOWN = document.querySelector(".middleit.comebackbox")
@@ -25,11 +25,11 @@ if (!ON_COOLDOWN) {
         lowestPrice = price
         // TODO: This is janky
         buyLink =
-          company.parentElement.parentElement.parentElement.parentElement.href
+          company.parentElement.parentElement.parentElement.parentElement
       }
     })
-
-    window.location = buyLink
+    buyLink.onclick = null
+    buyLink.click()
   }
 
   if (ON_BUY_PAGE) {
