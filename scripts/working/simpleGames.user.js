@@ -13,7 +13,7 @@
 // @match       https://www.marapets.com/spooks.php*
 // @match       https://www.marapets.com/giveaways.php
 // @match       https://www.marapets.com/graves.php
-// @match       https://www.marapets.com/dash.php
+// @match       https://www.marapets.com/dash.php*
 // @match       https://www.marapets.com/sewage.php
 // @match       https://www.marapets.com/giganticfairy.php
 // @match       https://www.marapets.com/sevenheaven.php
