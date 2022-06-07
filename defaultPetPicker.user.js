@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name        Default Pet Picker
-// @namespace   Marascripts
 // @match       https://www.marapets.com/guillotine.php
 // @match       https://www.marapets.com/pond.php?i_id=*
 // @match       https://www.marapets.com/sewerpipes.php
@@ -16,10 +15,13 @@
 // @version     1.0.0
 // @author      themagicteeth
 // @description Automates picking your default pet for dailies.
-// @license     MIT
 // @grant       none
 // ==/UserScript==
 
 const defaultPetImg = document.querySelector(".defaultpet")
-const defaultPetUrl = defaultPetImg ? defaultPetImg.parentElement.href : ""
-if (defaultPetUrl) { window.location = defaultPetUrl }
+const defaultPet = defaultPetImg ? defaultPetImg.parentElement : ""
+
+if (defaultPet) {
+  defaultPet.onclick = null
+  defaultPet.click()
+}
